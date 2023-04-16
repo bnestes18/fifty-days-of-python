@@ -12,4 +12,20 @@ def convert_add(list_of_strings):
         
     return arr_of_ints, sum
     
-print(convert_add(["4", "5", "6"]))
+print("convert_add function:",convert_add(["4", "5", "6"]))
+
+# EXTRA CHALLENGE!!!
+def check_duplicates(list):
+    dupes = []
+    for item in list:
+        item_count = list.count(item)
+        if item_count > 1 and item not in dupes:
+            dupes.append(item)
+    if len(dupes) == 0:
+        return "No duplicates"
+    else:
+        return dupes
+
+        
+
+print("check_duplicates function:",check_duplicates(['orange','banana','apple']))
