@@ -26,13 +26,6 @@ print("odd_even function", odd_even([1,2,4,6]))
 # Could not figure this one out on my own!!!! Grrrr!!!
 def prime_numbers(integer):
     primes = []
-    for i in range(0, integer+1):
-        if i > 1:
-            for j in range(2, i):
-                if i % j == 0:
-                    break
-            else:
-                primes.append(i)
-    return primes
+    
             
 print("prime_numbers function:", prime_numbers(10))
